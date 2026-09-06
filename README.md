@@ -22,7 +22,7 @@ The project models a many-to-many food-delivery relationship between customers a
 
 In my evaluation, the AVL-tree implementation performed best overall for the tested workload.
 
-## Structure
+## Repository structure
 
 ```text
 src/
@@ -30,7 +30,27 @@ src/
   array_m2m_db.c / array_m2m_db.h
   avl_m2m_db.c / avl_m2m_db.h
   hash_m2m_db.c / hash_m2m_db.h
+
+examples/
+  demo.c
+
+Makefile
 ```
+
+## Build and run
+
+```bash
+make
+./data_structures_demo
+```
+
+Or:
+
+```bash
+make run
+```
+
+The demo initialises each implementation, inserts a sample customer and restaurant, creates a many-to-many order relationship, and confirms the operation succeeds.
 
 ## Skills demonstrated
 
